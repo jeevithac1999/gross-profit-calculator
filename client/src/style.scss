@@ -1,0 +1,31 @@
+
+$color--primary:  #5c6ac4;
+
+
+.buttons {
+  background-color: $color--primary;
+  background-position: center;
+  border-radius: 5%;
+  border: none;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 20px;
+  transition: background 0.8s;
+  
+  &:hover {
+    background: darken($color--primary, 15%) radial-gradient(circle, transparent 1%, darken($color--primary, 5%) 1%) center/15000%;
+    outline: none;
+    border: none;
+    border-radius: 5%;
+  }
+  
+  &:active {
+    background-color: darken($color--primary, 10%);
+    background-size: 100%;
+    transition: background 0s;
+    outline: none;
+    border: none;
+    border-radius: 5%;
+  }
+}
